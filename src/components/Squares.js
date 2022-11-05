@@ -17,6 +17,7 @@ function Squares(props) {
         </div>
   );
 }
+
 const mapStateToProps = state => ({
   ...state
 });
