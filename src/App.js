@@ -8,12 +8,16 @@ import { connect } from "react-redux";
 import { startAction } from "./actions/startAction";
 import { endAction } from "./actions/endAction";
 
+// quadrado
+import Squares from './components/Squares';
+
 function App(props) {
   let componentClassName = () => {
     return props.rotating?"":" App-logo-paused"
   }
   return (
     <div className="App">
+      <Squares/>
       <div className="App-logo-container">
         <img 
           src={props.rotating?logo : segundaLogo} 
